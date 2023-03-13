@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:131421611146:task-definition/beer-task:3",
+    "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:131421611146:task-definition/beer-task:5",
     "containerDefinitions": [
         {
             "name": "beer-container",
-            "image": "131421611146.dkr.ecr.ap-northeast-2.amazonaws.com/beer-api:latest",
+            "image": "131421611146.dkr.ecr.ap-northeast-2.amazonaws.com/beer-api:59d5c15324df795e7054aac52d113bc7c7b0ede7",
             "cpu": 0,
             "portMappings": [
                 {
@@ -16,7 +16,6 @@
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
             "logConfiguration": {
@@ -31,10 +30,10 @@
         }
     ],
     "family": "beer-task",
-    "taskRoleArn": "arn:aws:iam::131421611146:role/beer-api-ecs-role",
-    "executionRoleArn": "arn:aws:iam::131421611146:role/beer-api-ecs-role",
+    "taskRoleArn": "arn:aws:iam::131421611146:role/ECSTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::131421611146:role/ECSTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -80,7 +79,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-03-10T06:07:40.743Z",
+    "registeredAt": "2023-03-13T06:56:37.596Z",
     "registeredBy": "arn:aws:iam::131421611146:root",
     "tags": []
 }
